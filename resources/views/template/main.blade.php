@@ -15,6 +15,10 @@
 	<link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}">
 	<!-- Google Font: Source Sans Pro -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+	
+	{{-- SweetAlert --}}
+    <link rel="stylesheet" href="{{asset ('css/sweetalert.css')}}">
+	
 	@stack('csss')
 </head>
 
@@ -113,6 +117,11 @@
 
 <!-- PAGE SCRIPTS -->
 <script src="{{ asset('admin/dist/js/pages/dashboard2.js') }}"></script>
+
+{{-- SweetAlert --}}
+<script src="{{asset ('js/sweetalert.min.js')}}"></script>
+
 @stack('scripts')
+@include('sweet::alert')
 </body>
 </html>

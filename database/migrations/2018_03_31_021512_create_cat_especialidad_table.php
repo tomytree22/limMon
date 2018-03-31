@@ -15,7 +15,7 @@ class CreateCatEspecialidadTable extends Migration
     {
         Schema::create('cat_especialidad', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('especialidad',255)
+            $table->string('especialidad',255);
             $table->timestamps();
         });
     }

@@ -14,9 +14,9 @@ class CreateCatModeloTable extends Migration
     public function up()
     {
         Schema::create('cat_modelo', function (Blueprint $table) {
-          $table->increments('id');
-          $table->string('modelo',200);
-          $table->timestamps();
+            $table->increments('id');
+            $table->string('modelo', 200);
+            $table->timestamps();
         });
     }
 

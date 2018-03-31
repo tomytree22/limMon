@@ -22,3 +22,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/adminl', function(){
 	return view('template.main');
 });
+
+Route::get('/sucursal', 'catSucursalController@index')->name('suc.index');
+Route::get('/sucursal/create', 'catSucursalController@create')->name('suc.create');
+Route::post('/sucursal/store', 'catSucursalController@store')->name('suc.store');
+Route::get('/sucursal/{sucursal}/edit', 'catSucursalController@edit')->name('suc.edit');
+Route::put('/sucursal/{sucursal}', 'catSucursalController@update')->name('suc.update');
+Route::delete('/sucursal/{sucursal}', 'catSucursalController@destroy')->name('suc.destroy');
